@@ -5,7 +5,8 @@ CREATE TABLE [dbo].[categories]
 [DateCreated_dtm] [datetime] NOT NULL CONSTRAINT [DF_Categories_DateCreated_dtm] DEFAULT (getdate()),
 [code] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [description] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-[col1] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+[col1] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[col7] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[categories] ADD CONSTRAINT [PK_Categories] PRIMARY KEY CLUSTERED  ([Id]) ON [PRIMARY]
